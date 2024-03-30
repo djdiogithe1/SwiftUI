@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ..................meta tagging and SEO....................... -->
+    <meta charset="UTF-8">
+    <meta name="description" content="WebDesign, getUwired, Website designer, web, designer.">
+    <meta name="keywords" content="web, designer, HTML, CSS, designer">
+    <meta name="author" content="Mr Michael T Finley">
+    <meta name="viewport" content="width=device-width, iniatal-scale-1.0">
+    <!-- ...................Page title.............. -->
+    <title>Drop down menu</title>
+    <!-- ................google fonts.............. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+          rel="stylesheet">
+    <!-- ................Css Link................. -->
+    <style>
+        
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-light: #33cb99;
+  --color-primary: #5fadcf;
+  --color-dark: #019966;
+  --color-border: #999b9a;
+  --color-bg: #101411;
+}
+
+body {
+  box-shadow: 0 0 30px var(--color-light);
+  background-image: url("http://www.getuwired.com/devtest/Death_to_stock_photography_Vibrant.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  min-height: 62px;
+  border-bottom: solid var(--color-light);
+  background-color: var(--color-white);
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 32px;
+  text-decoration: none;
+  width: 30%;
+  color: var(--color-bg);
+}
+
+.header ul {
+  position: relative;
+  list-style: none;
+  background-color: var(--color-white);
+}
+
+.header ul li {
+  position: relative;
+  font-size: large;
+  float: left;
+  text-decoration: none;
+}
+
+.header ul:hover {
+  background-color: var(--color-light);
+}
+
+.header ul li a {
+  font-size: 16px;
+  padding: 20px;
+  color: var(--color-white);
+  background-color: var(--color-light);
+  display: block;
+  text-decoration: none;
+}
+
+.header ul li a:hover {
+  background: var(--color-dark);
+}
+
+.header ul li ul {
+  position: absolute;
+  left: 0;
+  width: 220px;
+  background: var(--color-light);
+  display: none;
+}
+
+.header ul li ul li {
+  background-color: var(--color-light);
+  width: 100%;
+}
+
+.header ul li ul li ul {
+  left: 200px;
+  top: 0;
+  color: var(--color-white);
+}
+
+.header ul li:focus-within > ul,
+.header ul li:hover > ul {
+  display: initial;
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 20px;
+  }
+}
+    </style>
+</head>
+
+<body>
+    <div class="header"> 
+    <!-- .................Company Logo.................... -->
+    <a href="#" class="logo">GETUWIRED</a>
+    <!-- .................End Company Logo................ -->
+    <!-- .................... Start Nav Bar.................... -->
+    <ul>
+       <li><p>ABOUT</p>
+            <ul>
+                <li><a href="#">OUR STORY</a></li>
+                <li><a href="#">OUR COMMITMENT TO YOU</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li>
+        <p>LOCATIONS</p>
+            <ul>
+                <li><a href="#">AUSTIN, TX</a></li>
+                <li><a href="#">ATLANTA, GA</a></li>
+                <li><a href="#">SEATTLE, WA</a></li>
+                <li><a href="#">PORTLAND, OR</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li>
+        <p>PRODUCTS </p>
+            <ul>
+                <li><a href="#">NEW ARRIVALS</a></li>
+                <li><a href="#">FEATURED</a></li>
+                <li><a href="#">TOP RATED</a></li>
+                <li><a href="#">HIS</a></li>
+                <li><a href="#">HERS</a></li>
+                <li><a href="#">KIDS</a></li>
+                <li><a href="#">ACCESSORIES</a></li>
+                <li><a href="#">SPRING CATALOG</a></li>
+                <li><a href="#">THE ESSENTIALS</a></li>
+                <li><a href="#">SALE</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li>
+        <p>BLOG</p>
+            <ul>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li>
+        <p>CONTACT</p>
+            <ul>
+            </ul>
+        </li>
+    </ul> 
+</div>
+    
+    <!-- ....................End Nav Bar........................ -->
+    
+</body>
+
+</html>
